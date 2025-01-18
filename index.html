@@ -147,6 +147,90 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://rhcsa.teamcs.org/2025-01-18/cm6298mhm0000f4z8hjmzcmpi-250118-practice-aa060ef4bff6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Mannix Sun">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mannix Sun's RHCSA Notebook">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025-01-18/cm6298mhm0000f4z8hjmzcmpi-250118-practice-aa060ef4bff6/" class="post-title-link" itemprop="url">RHCSA 标准课程 - 03 - 2025/01/18 - 练习题</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2025-01-18 21:44:18 / 修改时间：21:58:19" itemprop="dateCreated datePublished" datetime="2025-01-18T21:44:18+08:00">2025-01-18</time>
+            </span>
+
+          
+            <span id="/2025-01-18/cm6298mhm0000f4z8hjmzcmpi-250118-practice-aa060ef4bff6/" class="post-meta-item leancloud_visitors" data-flag-title="RHCSA 标准课程 - 03 - 2025/01/18 - 练习题" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="2-配置存储库"><a href="#2-配置存储库" class="headerlink" title="2 配置存储库"></a>2 配置存储库</h2><p>node1 的 YUM 存储库已可以从</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://content/rhel9.0/x86_64/dvd/BaseOS">http://content/rhel9.0/x86_64/dvd/BaseOS</a></li>
+<li><a target="_blank" rel="noopener" href="http://content/rhel9.0/x86_64/dvd/AppStream">http://content/rhel9.0/x86_64/dvd/AppStream</a></li>
+</ul>
+<p>使用。</p>
+<p>配置您的系统，以将这些位置用作默认存储库。</p>
+<p>截图1：</p>
+<p><img data-src="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/ce/image-20250118214734598.png"></p>
+<p>截图2：</p>
+<p><img data-src="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/ce/image-20250118214816091.png"></p>
+<p>截图3：</p>
+<p><img data-src="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/ce/image-20250118214910401.png"></p>
+<h2 id="2-创建用户帐户"><a href="#2-创建用户帐户" class="headerlink" title="2 创建用户帐户"></a>2 创建用户帐户</h2><p>根据下列要求创建用户及组账号</p>
+<h3 id="2-1-名为-sysmgrs-的组"><a href="#2-1-名为-sysmgrs-的组" class="headerlink" title="2.1 名为 sysmgrs 的组"></a>2.1 名为 sysmgrs 的组</h3><p><img data-src="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/ce/image-20250118215054533.png"></p>
+<h3 id="2-2-用户-natasha，作为次要组从属于-sysmgrs"><a href="#2-2-用户-natasha，作为次要组从属于-sysmgrs" class="headerlink" title="2.2 用户 natasha，作为次要组从属于 sysmgrs"></a>2.2 用户 natasha，作为次要组从属于 sysmgrs</h3><p><img data-src="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/ce/image-20250118215200727.png"></p>
+<h3 id="2-3-用户-harry，作为次要组还从属于-sysmgrs"><a href="#2-3-用户-harry，作为次要组还从属于-sysmgrs" class="headerlink" title="2.3 用户 harry，作为次要组还从属于 sysmgrs"></a>2.3 用户 harry，作为次要组还从属于 sysmgrs</h3><p><img data-src="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/ce/image-20250118215244950.png"></p>
+<h3 id="2-4-用户-sarah，无权访问系统上的交互式-shell-且不是-sysmgrs-的成员"><a href="#2-4-用户-sarah，无权访问系统上的交互式-shell-且不是-sysmgrs-的成员" class="headerlink" title="2.4 用户 sarah，无权访问系统上的交互式 shell 且不是 sysmgrs 的成员"></a>2.4 用户 sarah，无权访问系统上的交互式 shell 且不是 sysmgrs 的成员</h3><p><img data-src="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/ce/image-20250118215356899.png"></p>
+<h3 id="2-5-natasha、harry-和-sarah-的密码应当都是-flectrag"><a href="#2-5-natasha、harry-和-sarah-的密码应当都是-flectrag" class="headerlink" title="2.5 natasha、harry 和 sarah 的密码应当都是 flectrag"></a>2.5 natasha、harry 和 sarah 的密码应当都是 flectrag</h3><p><img data-src="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/ce/image-20250118215556880.png"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://rhcsa.teamcs.org/2025-01-18/cm627kvrk0003bsz8dcic21v7-250118-class-a66d2452c65e/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -587,7 +671,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
