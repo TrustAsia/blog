@@ -21,12 +21,12 @@
     var CONFIG = {"hostname":"rhcsa.teamcs.org","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="2 配置存储库&lt;–!more–&gt; node1 的 YUM 存储库已可以从  http:&#x2F;&#x2F;content&#x2F;rhel9.0&#x2F;x86_64&#x2F;dvd&#x2F;BaseOS http:&#x2F;&#x2F;content&#x2F;rhel9.0&#x2F;x86_64&#x2F;dvd&#x2F;AppStream  使用。 配置您的系统，以将这些位置用作默认存储库。 截图1：  截图2：  截图3：  3 创建用户帐户根据下列要求创建用户及组账号 3.1">
+  <meta name="description" content="2 配置存储库">
 <meta property="og:type" content="article">
 <meta property="og:title" content="RHCSA 标准课程 - 03 - 2025&#x2F;01&#x2F;18 - 练习题">
 <meta property="og:url" content="https://rhcsa.teamcs.org/2025-01-18/cm6298mhm0000f4z8hjmzcmpi-250118-practice-aa060ef4bff6/index.html">
 <meta property="og:site_name" content="Mannix Sun&#39;s RHCSA Notebook">
-<meta property="og:description" content="2 配置存储库&lt;–!more–&gt; node1 的 YUM 存储库已可以从  http:&#x2F;&#x2F;content&#x2F;rhel9.0&#x2F;x86_64&#x2F;dvd&#x2F;BaseOS http:&#x2F;&#x2F;content&#x2F;rhel9.0&#x2F;x86_64&#x2F;dvd&#x2F;AppStream  使用。 配置您的系统，以将这些位置用作默认存储库。 截图1：  截图2：  截图3：  3 创建用户帐户根据下列要求创建用户及组账号 3.1">
+<meta property="og:description" content="2 配置存储库">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://rhcsa.teamcs.org/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/ce/image-20250118214734598.png">
 <meta property="og:image" content="https://rhcsa.teamcs.org/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/ce/image-20250118214816091.png">
@@ -37,7 +37,7 @@
 <meta property="og:image" content="https://rhcsa.teamcs.org/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/ce/image-20250118215356899.png">
 <meta property="og:image" content="https://rhcsa.teamcs.org/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/ce/image-20250118215556880.png">
 <meta property="article:published_time" content="2025-01-18T13:44:18.000Z">
-<meta property="article:modified_time" content="2025-01-18T14:41:31.368Z">
+<meta property="article:modified_time" content="2025-01-18T14:42:48.773Z">
 <meta property="article:author" content="Mannix Sun">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://rhcsa.teamcs.org/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/ce/image-20250118214734598.png">
@@ -185,7 +185,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2025-01-18 21:44:18 / 修改时间：22:41:31" itemprop="dateCreated datePublished" datetime="2025-01-18T21:44:18+08:00">2025-01-18</time>
+              <time title="创建时间：2025-01-18 21:44:18 / 修改时间：22:42:48" itemprop="dateCreated datePublished" datetime="2025-01-18T21:44:18+08:00">2025-01-18</time>
             </span>
 
           
@@ -206,7 +206,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="2-配置存储库"><a href="#2-配置存储库" class="headerlink" title="2 配置存储库"></a>2 配置存储库</h2><p>&lt;–!more–&gt;</p>
+        <h2 id="2-配置存储库"><a href="#2-配置存储库" class="headerlink" title="2 配置存储库"></a>2 配置存储库</h2><span id="more"></span>
+
 <p>node1 的 YUM 存储库已可以从</p>
 <ul>
 <li><a target="_blank" rel="noopener" href="http://content/rhel9.0/x86_64/dvd/BaseOS">http://content/rhel9.0/x86_64/dvd/BaseOS</a></li>
