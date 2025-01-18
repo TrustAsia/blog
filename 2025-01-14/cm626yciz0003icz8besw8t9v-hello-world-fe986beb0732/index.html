@@ -24,7 +24,7 @@
   <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://rhcsa.teamcs.org/2025-01-14/cm626n8p20003ksz8cj0c6727-hello-world-fe986beb0732/index.html">
+<meta property="og:url" content="https://rhcsa.teamcs.org/2025-01-14/cm626yciz0003icz8besw8t9v-hello-world-fe986beb0732/index.html">
 <meta property="og:site_name" content="Mannix Sun&#39;s RHCSA Notebook">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
 <meta property="og:locale" content="zh_CN">
@@ -33,7 +33,7 @@
 <meta property="article:author" content="Mannix Sun">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://rhcsa.teamcs.org/2025-01-14/cm626n8p20003ksz8cj0c6727-hello-world-fe986beb0732/">
+<link rel="canonical" href="https://rhcsa.teamcs.org/2025-01-14/cm626yciz0003icz8besw8t9v-hello-world-fe986beb0732/">
 
 
 <script id="page-configurations">
@@ -152,7 +152,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://rhcsa.teamcs.org/2025-01-14/cm626n8p20003ksz8cj0c6727-hello-world-fe986beb0732/">
+    <link itemprop="mainEntityOfPage" href="https://rhcsa.teamcs.org/2025-01-14/cm626yciz0003icz8besw8t9v-hello-world-fe986beb0732/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -186,7 +186,7 @@
               </span>
 
           
-            <span id="/2025-01-14/cm626n8p20003ksz8cj0c6727-hello-world-fe986beb0732/" class="post-meta-item leancloud_visitors" data-flag-title="Hello World" title="阅读次数">
+            <span id="/2025-01-14/cm626yciz0003icz8besw8t9v-hello-world-fe986beb0732/" class="post-meta-item leancloud_visitors" data-flag-title="Hello World" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -252,7 +252,7 @@
     <div class="post-nav">
       <div class="post-nav-item"></div>
       <div class="post-nav-item">
-    <a href="/2025-01-14/cm626n8p00001ksz866t97hka-250114-practise-b1bfa51a8833/" rel="next" title="RHCSA 标准课程 - 01 - 2025/01/14 - 练习题">
+    <a href="/2025-01-14/cm626ycit0000icz8dc0r8u2g-250114-practise-b1bfa51a8833/" rel="next" title="RHCSA 标准课程 - 01 - 2025/01/14 - 练习题">
       RHCSA 标准课程 - 01 - 2025/01/14 - 练习题 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
@@ -402,9 +402,14 @@
                 console.error('Failed to save visitor count', error);
               });
           } else {
-              leancloudSelector(url).innerText = 'Counter not initialized! More info at console err msg.';
-              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
-            
+              Counter('post', '/classes/Counter', { title, url, time: 1 })
+                .then(response => response.json())
+                .then(() => {
+                  leancloudSelector(url).innerText = 1;
+                })
+                .catch(error => {
+                  console.error('Failed to create', error);
+                });
           }
         })
         .catch(error => {
@@ -431,7 +436,7 @@
         });
     }
 
-    let { app_id, app_key, server_url } = {"enable":true,"app_id":"sKFGrGtIZtAE3N1RwlBQt0sN-gzGzoHsz","app_key":"qJ1LaIDfpN28iNBQTDXP25UW","server_url":"https://skfgrgti.lc-cn-n1-shared.com","security":true};
+    let { app_id, app_key, server_url } = {"enable":true,"app_id":"sKFGrGtIZtAE3N1RwlBQt0sN-gzGzoHsz","app_key":"qJ1LaIDfpN28iNBQTDXP25UW","server_url":"https://skfgrgti.lc-cn-n1-shared.com","security":false};
     function fetchData(api_server) {
       var Counter = (method, url, data) => {
         return fetch(`${api_server}/1.1${url}`, {
@@ -518,7 +523,7 @@
       quicklink({
         timeout : 3000,
         priority: true,
-        ignores : [uri => uri.includes('#'),uri => uri === 'https://rhcsa.teamcs.org/2025-01-14/cm626n8p20003ksz8cj0c6727-hello-world-fe986beb0732/',]
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://rhcsa.teamcs.org/2025-01-14/cm626yciz0003icz8besw8t9v-hello-world-fe986beb0732/',]
       });
       });
   </script>
