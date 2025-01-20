@@ -147,7 +147,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://rhcsa.teamcs.org/2025-01-20/cm64tzvuo0000zkz80lynhjl8-250120-class-444f0feb2943/">
+    <link itemprop="mainEntityOfPage" href="https://rhcsa.teamcs.org/2025-01-20/cm64tzvuo0000zkz80lynhjl8-250120-class-cc16acd18b32/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -161,7 +161,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2025-01-20/cm64tzvuo0000zkz80lynhjl8-250120-class-444f0feb2943/" class="post-title-link" itemprop="url">未命名</a>
+            <a href="/2025-01-20/cm64tzvuo0000zkz80lynhjl8-250120-class-cc16acd18b32/" class="post-title-link" itemprop="url">RHCSA 标准课程 - 04 - 2025/01/20 - 课程笔记</a>
         </h2>
 
         <div class="post-meta">
@@ -172,11 +172,11 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2025-01-20 17:12:10 / 修改时间：17:14:44" itemprop="dateCreated datePublished" datetime="2025-01-20T17:12:10+08:00">2025-01-20</time>
+              <time title="创建时间：2025-01-20 17:16:55 / 修改时间：17:17:06" itemprop="dateCreated datePublished" datetime="2025-01-20T17:16:55+08:00">2025-01-20</time>
             </span>
 
           
-            <span id="/2025-01-20/cm64tzvuo0000zkz80lynhjl8-250120-class-444f0feb2943/" class="post-meta-item leancloud_visitors" data-flag-title="" title="阅读次数">
+            <span id="/2025-01-20/cm64tzvuo0000zkz80lynhjl8-250120-class-cc16acd18b32/" class="post-meta-item leancloud_visitors" data-flag-title="RHCSA 标准课程 - 04 - 2025/01/20 - 课程笔记" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -193,167 +193,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="RHCSA-标准课程-04-2025-01-20-课程笔记"><a href="#RHCSA-标准课程-04-2025-01-20-课程笔记" class="headerlink" title="RHCSA 标准课程 - 04 - 2025&#x2F;01&#x2F;20 - 课程笔记"></a>RHCSA 标准课程 - 04 - 2025&#x2F;01&#x2F;20 - 课程笔记</h1><h3 id="4-3-管理组"><a href="#4-3-管理组" class="headerlink" title="4.3 管理组"></a>4.3 管理组</h3><blockquote>
+          <h3 id="4-3-管理组"><a href="#4-3-管理组" class="headerlink" title="4.3 管理组"></a>4.3 管理组</h3><blockquote>
 <p>目标: 学习完本节后，学员应能够: 创建、修改和删除本地组帐戶。</p>
 </blockquote>
-<h4 id="4-3-1-创建组"><a href="#4-3-1-创建组" class="headerlink" title="4.3.1 创建组"></a>4.3.1 创建组</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groupadd 组名</span><br></pre></td></tr></table></figure>
-
-<p><img data-src="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120154701073.png"></p>
-<h4 id="4-3-2-指定组的GID"><a href="#4-3-2-指定组的GID" class="headerlink" title="4.3.2 指定组的GID"></a>4.3.2 指定组的GID</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groupadd -g GID 组名</span><br></pre></td></tr></table></figure>
-
-<p><img data-src="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120154833927.png"></p>
-<h4 id="4-3-3-从命令行中删除组"><a href="#4-3-3-从命令行中删除组" class="headerlink" title="4.3.3 从命令行中删除组"></a>4.3.3 从命令行中删除组</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groupdel 组名</span><br></pre></td></tr></table></figure>
-
-<p><img data-src="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120155327217.png"></p>
-<p><strong>注意: 如果组是现有用户的主要组，则无法删除。如何一定要删除主要组，需要更改主要组。</strong></p>
-<h4 id="4-3-4-修改现有的组"><a href="#4-3-4-修改现有的组" class="headerlink" title="4.3.4 修改现有的组"></a>4.3.4 修改现有的组</h4><h5 id="4-3-4-1-更改组GID"><a href="#4-3-4-1-更改组GID" class="headerlink" title="4.3.4.1 更改组GID"></a>4.3.4.1 更改组GID</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groudmod -g 新GID 组名</span><br></pre></td></tr></table></figure>
-
-<p><img data-src="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120155748382.png"></p>
-<h5 id="4-3-4-2-更改组名"><a href="#4-3-4-2-更改组名" class="headerlink" title="4.3.4.2 更改组名"></a>4.3.4.2 更改组名</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groupmod -n 新组名 原组名</span><br></pre></td></tr></table></figure>
-
-<p><img data-src="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120155832797.png"></p>
-<h4 id="4-3-5-更改用户附加组"><a href="#4-3-5-更改用户附加组" class="headerlink" title="4.3.5 更改用户附加组"></a>4.3.5 更改用户附加组</h4><h5 id="4-3-5-1-方法1"><a href="#4-3-5-1-方法1" class="headerlink" title="4.3.5.1 方法1"></a>4.3.5.1 方法1</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gpasswd -a 用户名 组名</span><br></pre></td></tr></table></figure>
-
-<p><img data-src="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120161906159.png"></p>
-<h5 id="4-3-5-2-方法2"><a href="#4-3-5-2-方法2" class="headerlink" title="4.3.5.2 方法2"></a>4.3.5.2 方法2</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">usermod -a -G 组名 用户名</span><br></pre></td></tr></table></figure>
-
-<p><img data-src="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120162103979.png"></p>
-<h4 id="4-3-6-从附加组中删除用户"><a href="#4-3-6-从附加组中删除用户" class="headerlink" title="4.3.6 从附加组中删除用户"></a>4.3.6 从附加组中删除用户</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gpasswd -d 用户名 组名</span><br></pre></td></tr></table></figure>
-
-<p><img data-src="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120162312612.png"></p>
-<h2 id="5-设置文件的-Linux-文件系统权限-解释不同权限设置的安全效果"><a href="#5-设置文件的-Linux-文件系统权限-解释不同权限设置的安全效果" class="headerlink" title="5 设置文件的 Linux 文件系统权限 解释不同权限设置的安全效果"></a>5 设置文件的 Linux 文件系统权限 解释不同权限设置的安全效果</h2><p>目标:</p>
-<ul>
-<li>列出文件和目录的文件系统权限，并解释这些权限对用戶和组访问权限的影响。</li>
-<li>利用命令行工具更改文件的权限和所有权。</li>
-<li>控制用戶创建的新文件的默认权限，解释特殊权限的影响，并使用特殊权限和默认权限设置在特定目录中创建的文件的组所有者。</li>
-</ul>
-<h3 id="5-1-Linux-文件系统权限"><a href="#5-1-Linux-文件系统权限" class="headerlink" title="5.1 Linux 文件系统权限"></a>5.1 Linux 文件系统权限</h3><p>文件权限控制对文件的访问</p>
-<p>可以针对文件所属用戶、所属组和其他用戶可以设置不同的权限</p>
-<p>有三种权限类别: 读取、写入和执行</p>
-<table>
-<thead>
-<tr>
-<th align="center">权限</th>
-<th align="center">对文件的影响</th>
-<th align="center">对目录的影响</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">r (读取)</td>
-<td align="center">可以读取文件内容</td>
-<td align="center">可以列出目录的内容 (文件名) 。</td>
-</tr>
-<tr>
-<td align="center">w (写入)</td>
-<td align="center">可以更改文件内容</td>
-<td align="center">可以创建或删除目录中的任一文件。</td>
-</tr>
-<tr>
-<td align="center">x (执行)</td>
-<td align="center">可以作为命令执行文件</td>
-<td align="center">目录可以成为当前工作目录 (可以cd进入， 但还需要读取权限才能列出里面的文件)</td>
-</tr>
-</tbody></table>
-<h4 id="5-1-1-查看文件和目录的权限及所有权"><a href="#5-1-1-查看文件和目录的权限及所有权" class="headerlink" title="5.1.1 查看文件和目录的权限及所有权"></a>5.1.1 查看文件和目录的权限及所有权</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span> -l //显示文件的权限和所有权</span><br></pre></td></tr></table></figure>
-
-<p><img data-src="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120163323122.png"></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span> -ld  //显示所属目录的权限和所有权信息</span><br></pre></td></tr></table></figure>
-
-<p><img data-src="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120163339901.png"></p>
-<p>其中 第一位描述了文件类型</p>
-<ul>
-<li>“-“ 为普通文件</li>
-<li>“d” 为目录</li>
-<li>“l” 为链接文件</li>
-</ul>
-<p>接下九位代表文件权限，分成三组，每组三个字符，每组分别对应所属用户、所属组、其他用户权限</p>
-<ul>
-<li>r 读取 Read 4</li>
-<li>w 写入 Write 2</li>
-<li>x 执行 Execute 1</li>
-</ul>
-<blockquote>
-<p>drwxr-xr-x. 2 root root 6 Jan 20 01:49 123&#x2F;</p>
-<table>
-<thead>
-<tr>
-<th align="center">d</th>
-<th align="center">rwx</th>
-<th align="center">r-x</th>
-<th align="center">r-x</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">目录</td>
-<td align="center">所属用户权限</td>
-<td align="center">所属组权限</td>
-<td align="center">其他用户权限</td>
-</tr>
-<tr>
-<td align="center">directory</td>
-<td align="center">u</td>
-<td align="center">g</td>
-<td align="center">o</td>
-</tr>
-</tbody></table>
-</blockquote>
-<h3 id="5-2-管理文件系统权限"><a href="#5-2-管理文件系统权限" class="headerlink" title="5.2 管理文件系统权限"></a>5.2 管理文件系统权限</h3><blockquote>
-<p>目标: 学习完本节后，学员应能够: 使用命令行工具更改文件的权限和所有权。</p>
-</blockquote>
-<p>chmod (change mode) 命令用于修改文件权限，可使用符号法或数值法来设置权限。</p>
-<h4 id="5-2-1-符号法"><a href="#5-2-1-符号法" class="headerlink" title="5.2.1 符号法"></a>5.2.1 符号法</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">chmod</span> -R (递归)  谁(u/g/o/a)/操作(+/-/=)/权限(r/w/x) file|directory</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>Who 是指 u、g、o、a (代表用戶、组、其他、全部) </li>
-<li>What 是指 +、-、&#x3D; (代表添加、删除、精确设置) </li>
-<li>Which 是指 r、w、x代表读取、写入、执行文件或进入目<br>录)</li>
-</ul>
-<p><img data-src="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120164945704.png"></p>
-<h4 id="5-2-2-数值法"><a href="#5-2-2-数值法" class="headerlink" title="5.2.2 数值法"></a>5.2.2 数值法</h4><p>每个数字代表一个访问级别的权限: user group others。<br>数字的计算方法是: 将每个权限的数值加在一起，其中4代表r(读取)，2代表w(写入)，1代表x(执行)。</p>
-<p><img data-src="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/4549.png"></p>
-<p>使用数字来标记权限</p>
-<table>
-<thead>
-<tr>
-<th align="center">权限</th>
-<th align="center">数字</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">r</td>
-<td align="center">4</td>
-</tr>
-<tr>
-<td align="center">w</td>
-<td align="center">2</td>
-</tr>
-<tr>
-<td align="center">x</td>
-<td align="center">1</td>
-</tr>
-</tbody></table>
-<p>例如:</p>
-<p>rwx&#x3D;4+2+1&#x3D;7</p>
-<p>r-x&#x3D;4+0+1&#x3D;5</p>
-<p>–x&#x3D;0+0+1&#x3D;1</p>
-<p>rwxr-x–x&#x3D;751</p>
-<p>( u:rwx&#x3D;7 g:r-x&#x3D;5 o: –x&#x3D;1 )</p>
-<p>chmod u&#x3D;rwx,g&#x3D;rx,o&#x3D;x   &#x2F;root&#x2F;test06</p>
-<p>chmod  751  rwxr-x–x&#x3D;</p>
-<h3 id="5-3-管理文件或者目录的归属"><a href="#5-3-管理文件或者目录的归属" class="headerlink" title="5.3 管理文件或者目录的归属"></a>5.3 管理文件或者目录的归属</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">chown</span> -R(递归)  用户:组 文件/目录</span><br></pre></td></tr></table></figure>
-
-<p><img data-src="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120170117989.png"></p>
-<h3 id="5-4-ACL-访问控制列表-针对个别用户或者组单独设置权限"><a href="#5-4-ACL-访问控制列表-针对个别用户或者组单独设置权限" class="headerlink" title="5.4 ACL(访问控制列表): 针对个别用户或者组单独设置权限"></a>5.4 ACL(访问控制列表): 针对个别用户或者组单独设置权限</h3><h4 id="5-4-1-单独给某个用户或组添加权限"><a href="#5-4-1-单独给某个用户或组添加权限" class="headerlink" title="5.4.1 单独给某个用户或组添加权限"></a>5.4.1 单独给某个用户或组添加权限</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">setfacl -m(修改) u:用户名:权限,g:组名:权限 目录/文件</span><br><span class="line">// 不存在的权限需要添加 <span class="string">&quot;-&quot;</span></span><br><span class="line">// 例如 rx 需要写成 r-x</span><br></pre></td></tr></table></figure>
-
-<p><img data-src="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120170651640.png"></p>
-<h4 id="5-4-2-查看单独设置的权限"><a href="#5-4-2-查看单独设置的权限" class="headerlink" title="5.4.2 查看单独设置的权限"></a>5.4.2 查看单独设置的权限</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">getfacl 目录/文件</span><br></pre></td></tr></table></figure>
-
-<p><img data-src="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120170718572.png"></p>
-<p>5.4.3 删除单独设置的权限</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">setfacl -b 目录/文件</span><br></pre></td></tr></table></figure>
-
-<p><img data-src="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120170817620.png"></p>
-
+          <!--noindex-->
+          <!--/noindex-->
+        
       
     </div>
 
