@@ -21,28 +21,49 @@
     var CONFIG = {"hostname":"rhcsa.teamcs.org","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
+  <meta name="description" content="RHCSA 标准课程 - 04 - 2025&#x2F;01&#x2F;20 - 课程笔记4.3 管理组 目标: 学习完本节后，学员应能够: 创建、修改和删除本地组帐戶。  4.3.1 创建组1groupadd 组名   4.3.2 指定组的GID1groupadd -g GID 组名   4.3.3 从命令行中删除组1groupdel 组名   注意: 如果组是现有用户的主要组，则无法删除。如何">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Mannix Sun&#39;s RHCSA Notebook">
-<meta property="og:url" content="https://rhcsa.teamcs.org/index.html">
+<meta property="og:url" content="https://rhcsa.teamcs.org/2025-01-20/cm64tzvuo0000zkz80lynhjl8-250120-class-444f0feb2943/index.html">
 <meta property="og:site_name" content="Mannix Sun&#39;s RHCSA Notebook">
+<meta property="og:description" content="RHCSA 标准课程 - 04 - 2025&#x2F;01&#x2F;20 - 课程笔记4.3 管理组 目标: 学习完本节后，学员应能够: 创建、修改和删除本地组帐戶。  4.3.1 创建组1groupadd 组名   4.3.2 指定组的GID1groupadd -g GID 组名   4.3.3 从命令行中删除组1groupdel 组名   注意: 如果组是现有用户的主要组，则无法删除。如何">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://rhcsa.teamcs.org/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120154701073.png">
+<meta property="og:image" content="https://rhcsa.teamcs.org/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120154833927.png">
+<meta property="og:image" content="https://rhcsa.teamcs.org/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120155327217.png">
+<meta property="og:image" content="https://rhcsa.teamcs.org/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120155748382.png">
+<meta property="og:image" content="https://rhcsa.teamcs.org/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120155832797.png">
+<meta property="og:image" content="https://rhcsa.teamcs.org/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120161906159.png">
+<meta property="og:image" content="https://rhcsa.teamcs.org/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120162103979.png">
+<meta property="og:image" content="https://rhcsa.teamcs.org/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120162312612.png">
+<meta property="og:image" content="https://rhcsa.teamcs.org/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120163323122.png">
+<meta property="og:image" content="https://rhcsa.teamcs.org/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120163339901.png">
+<meta property="og:image" content="https://rhcsa.teamcs.org/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120164945704.png">
+<meta property="og:image" content="https://rhcsa.teamcs.org/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/4549.png">
+<meta property="og:image" content="https://rhcsa.teamcs.org/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120170117989.png">
+<meta property="og:image" content="https://rhcsa.teamcs.org/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120170651640.png">
+<meta property="og:image" content="https://rhcsa.teamcs.org/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120170718572.png">
+<meta property="og:image" content="https://rhcsa.teamcs.org/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120170817620.png">
+<meta property="article:published_time" content="2025-01-20T09:12:10.501Z">
+<meta property="article:modified_time" content="2025-01-20T09:14:44.947Z">
 <meta property="article:author" content="Mannix Sun">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://rhcsa.teamcs.org/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120154701073.png">
 
-<link rel="canonical" href="https://rhcsa.teamcs.org/">
+<link rel="canonical" href="https://rhcsa.teamcs.org/2025-01-20/cm64tzvuo0000zkz80lynhjl8-250120-class-444f0feb2943/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>Mannix Sun's RHCSA Notebook</title>
+  <title> | Mannix Sun's RHCSA Notebook</title>
   
 
 
@@ -141,9 +162,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -159,10 +181,9 @@
       <meta itemprop="name" content="Mannix Sun's RHCSA Notebook">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
+        <h1 class="post-title" itemprop="name headline">
           
-            <a href="/2025-01-20/cm64tzvuo0000zkz80lynhjl8-250120-class-444f0feb2943/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -193,7 +214,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="RHCSA-标准课程-04-2025-01-20-课程笔记"><a href="#RHCSA-标准课程-04-2025-01-20-课程笔记" class="headerlink" title="RHCSA 标准课程 - 04 - 2025&#x2F;01&#x2F;20 - 课程笔记"></a>RHCSA 标准课程 - 04 - 2025&#x2F;01&#x2F;20 - 课程笔记</h1><h3 id="4-3-管理组"><a href="#4-3-管理组" class="headerlink" title="4.3 管理组"></a>4.3 管理组</h3><blockquote>
+        <h1 id="RHCSA-标准课程-04-2025-01-20-课程笔记"><a href="#RHCSA-标准课程-04-2025-01-20-课程笔记" class="headerlink" title="RHCSA 标准课程 - 04 - 2025&#x2F;01&#x2F;20 - 课程笔记"></a>RHCSA 标准课程 - 04 - 2025&#x2F;01&#x2F;20 - 课程笔记</h1><h3 id="4-3-管理组"><a href="#4-3-管理组" class="headerlink" title="4.3 管理组"></a>4.3 管理组</h3><blockquote>
 <p>目标: 学习完本节后，学员应能够: 创建、修改和删除本地组帐戶。</p>
 </blockquote>
 <h4 id="4-3-1-创建组"><a href="#4-3-1-创建组" class="headerlink" title="4.3.1 创建组"></a>4.3.1 创建组</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groupadd 组名</span><br></pre></td></tr></table></figure>
@@ -354,477 +375,50 @@
 
 <p><img data-src="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/image-20250120170817620.png"></p>
 
-      
     </div>
 
     
     
     
+        <div class="reward-container">
+  <div></div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="https://cdn.sa.net/2025/01/18/5OlW3DzI82xHV6q.png" alt="Mannix Sun 微信支付">
+        <p>微信支付</p>
+      </div>
+      
+      <div style="display: inline-block;">
+        <img src="https://cdn.sa.net/2025/01/18/oZ8VGKN5vSDjwdm.jpg" alt="Mannix Sun 支付宝">
+        <p>支付宝</p>
+      </div>
+
+  </div>
+</div>
+
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://rhcsa.teamcs.org/2025-01-18/cm6298mhm0000f4z8hjmzcmpi-250118-practice-aa060ef4bff6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Mannix Sun">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mannix Sun's RHCSA Notebook">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025-01-18/cm6298mhm0000f4z8hjmzcmpi-250118-practice-aa060ef4bff6/" class="post-title-link" itemprop="url">RHCSA 标准课程 - 03 - 2025/01/18 - 练习题</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2025-01-18 21:44:18" itemprop="dateCreated datePublished" datetime="2025-01-18T21:44:18+08:00">2025-01-18</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2025-01-20 17:12:47" itemprop="dateModified" datetime="2025-01-20T17:12:47+08:00">2025-01-20</time>
-              </span>
-
-          
-            <span id="/2025-01-18/cm6298mhm0000f4z8hjmzcmpi-250118-practice-aa060ef4bff6/" class="post-meta-item leancloud_visitors" data-flag-title="RHCSA 标准课程 - 03 - 2025/01/18 - 练习题" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="2-配置存储库"><a href="#2-配置存储库" class="headerlink" title="2 配置存储库"></a>2 配置存储库</h2>
-          <!--noindex-->
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://rhcsa.teamcs.org/2025-01-18/cm627kvrk0003bsz8dcic21v7-250118-class-a66d2452c65e/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Mannix Sun">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mannix Sun's RHCSA Notebook">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025-01-18/cm627kvrk0003bsz8dcic21v7-250118-class-a66d2452c65e/" class="post-title-link" itemprop="url">RHCSA 标准课程 - 03 - 2025/01/18 - 课程笔记</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2025-01-18 17:49:11" itemprop="dateCreated datePublished" datetime="2025-01-18T17:49:11+08:00">2025-01-18</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2025-01-20 17:13:27" itemprop="dateModified" datetime="2025-01-20T17:13:27+08:00">2025-01-20</time>
-              </span>
-
-          
-            <span id="/2025-01-18/cm627kvrk0003bsz8dcic21v7-250118-class-a66d2452c65e/" class="post-meta-item leancloud_visitors" data-flag-title="RHCSA 标准课程 - 03 - 2025/01/18 - 课程笔记" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="2-4-使用命令行工具管理文件"><a href="#2-4-使用命令行工具管理文件" class="headerlink" title="2.4 使用命令行工具管理文件"></a>2.4 使用命令行工具管理文件</h3><blockquote>
-<p>目标: 学习完本节后，学员应能够: 创建、复制、移动和删除文件与目录。</p>
-</blockquote>
-          <!--noindex-->
-          <!--/noindex-->
         
-      
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2025-01-18/cm6298mhm0000f4z8hjmzcmpi-250118-practice-aa060ef4bff6/" rel="prev" title="RHCSA 标准课程 - 03 - 2025/01/18 - 练习题">
+      <i class="fa fa-chevron-left"></i> RHCSA 标准课程 - 03 - 2025/01/18 - 练习题
+    </a></div>
+      <div class="post-nav-item"></div>
     </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
       </footer>
+    
   </article>
   
   
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://rhcsa.teamcs.org/2025-01-16/cm627kvrk0004bsz8f5m51pbs-250116-class-99d49bcf54da/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Mannix Sun">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mannix Sun's RHCSA Notebook">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025-01-16/cm627kvrk0004bsz8f5m51pbs-250116-class-99d49bcf54da/" class="post-title-link" itemprop="url">RHCSA 标准课程 - 02 - 2025/01/16 - 课程笔记</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2025-01-16 17:22:15" itemprop="dateCreated datePublished" datetime="2025-01-16T17:22:15+08:00">2025-01-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2025-01-20 17:14:24" itemprop="dateModified" datetime="2025-01-20T17:14:24+08:00">2025-01-20</time>
-              </span>
-
-          
-            <span id="/2025-01-16/cm627kvrk0004bsz8f5m51pbs-250116-class-99d49bcf54da/" class="post-meta-item leancloud_visitors" data-flag-title="RHCSA 标准课程 - 02 - 2025/01/16 - 课程笔记" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="1-3-验证网络配置"><a href="#1-3-验证网络配置" class="headerlink" title="1.3 验证网络配置"></a>1.3 验证网络配置</h2>
-          <!--noindex-->
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://rhcsa.teamcs.org/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Mannix Sun">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mannix Sun's RHCSA Notebook">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/" class="post-title-link" itemprop="url">RHCSA 标准课程 - 01 - 2025/01/14 - 课程笔记</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2025-01-14 19:29:55" itemprop="dateCreated datePublished" datetime="2025-01-14T19:29:55+08:00">2025-01-14</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2025-01-18 18:04:05" itemprop="dateModified" datetime="2025-01-18T18:04:05+08:00">2025-01-18</time>
-              </span>
-
-          
-            <span id="/2025-01-14/cm627kvrc0000bsz80785a8s8-250114-class-7e0b172de507/" class="post-meta-item leancloud_visitors" data-flag-title="RHCSA 标准课程 - 01 - 2025/01/14 - 课程笔记" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h2 id="1-配置网络-登录到本地和远程Linux主机-编辑文本文件"><a href="#1-配置网络-登录到本地和远程Linux主机-编辑文本文件" class="headerlink" title="1 配置网络 登录到本地和远程Linux主机 编辑文本文件"></a>1 配置网络 登录到本地和远程Linux主机 编辑文本文件</h2>
-          <!--noindex-->
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://rhcsa.teamcs.org/2025-01-14/cm627kvrh0001bsz80fsub3kb-250114-practise-b1bfa51a8833/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Mannix Sun">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mannix Sun's RHCSA Notebook">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025-01-14/cm627kvrh0001bsz80fsub3kb-250114-practise-b1bfa51a8833/" class="post-title-link" itemprop="url">RHCSA 标准课程 - 01 - 2025/01/14 - 练习题</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2025-01-14 17:29:55" itemprop="dateCreated datePublished" datetime="2025-01-14T17:29:55+08:00">2025-01-14</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2025-01-20 17:13:27" itemprop="dateModified" datetime="2025-01-20T17:13:27+08:00">2025-01-20</time>
-              </span>
-
-          
-            <span id="/2025-01-14/cm627kvrh0001bsz80fsub3kb-250114-practise-b1bfa51a8833/" class="post-meta-item leancloud_visitors" data-flag-title="RHCSA 标准课程 - 01 - 2025/01/14 - 练习题" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>配置网络设置</p>
-          <!--noindex-->
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://rhcsa.teamcs.org/2025-01-14/cm627kvrj0002bsz89jk315xe-hello-world-fe986beb0732/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Mannix Sun">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mannix Sun's RHCSA Notebook">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2025-01-14/cm627kvrj0002bsz89jk315xe-hello-world-fe986beb0732/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2025-01-14 08:29:55" itemprop="dateCreated datePublished" datetime="2025-01-14T08:29:55+08:00">2025-01-14</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2025-01-18 13:50:08" itemprop="dateModified" datetime="2025-01-18T13:50:08+08:00">2025-01-18</time>
-              </span>
-
-          
-            <span id="/2025-01-14/cm627kvrj0002bsz89jk315xe-hello-world-fe986beb0732/" class="post-meta-item leancloud_visitors" data-flag-title="Hello World" title="阅读次数">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-eye"></i>
-              </span>
-              <span class="post-meta-item-text">阅读次数：</span>
-              <span class="leancloud-visitors-count"></span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-
   
 
 
@@ -877,6 +471,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#RHCSA-%E6%A0%87%E5%87%86%E8%AF%BE%E7%A8%8B-04-2025-01-20-%E8%AF%BE%E7%A8%8B%E7%AC%94%E8%AE%B0"><span class="nav-number">1.</span> <span class="nav-text">RHCSA 标准课程 - 04 - 2025&#x2F;01&#x2F;20 - 课程笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-%E7%AE%A1%E7%90%86%E7%BB%84"><span class="nav-number">1.0.1.</span> <span class="nav-text">4.3 管理组</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-1-%E5%88%9B%E5%BB%BA%E7%BB%84"><span class="nav-number">1.0.1.1.</span> <span class="nav-text">4.3.1 创建组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-2-%E6%8C%87%E5%AE%9A%E7%BB%84%E7%9A%84GID"><span class="nav-number">1.0.1.2.</span> <span class="nav-text">4.3.2 指定组的GID</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-3-%E4%BB%8E%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%AD%E5%88%A0%E9%99%A4%E7%BB%84"><span class="nav-number">1.0.1.3.</span> <span class="nav-text">4.3.3 从命令行中删除组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-4-%E4%BF%AE%E6%94%B9%E7%8E%B0%E6%9C%89%E7%9A%84%E7%BB%84"><span class="nav-number">1.0.1.4.</span> <span class="nav-text">4.3.4 修改现有的组</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#4-3-4-1-%E6%9B%B4%E6%94%B9%E7%BB%84GID"><span class="nav-number">1.0.1.4.1.</span> <span class="nav-text">4.3.4.1 更改组GID</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-3-4-2-%E6%9B%B4%E6%94%B9%E7%BB%84%E5%90%8D"><span class="nav-number">1.0.1.4.2.</span> <span class="nav-text">4.3.4.2 更改组名</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-5-%E6%9B%B4%E6%94%B9%E7%94%A8%E6%88%B7%E9%99%84%E5%8A%A0%E7%BB%84"><span class="nav-number">1.0.1.5.</span> <span class="nav-text">4.3.5 更改用户附加组</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#4-3-5-1-%E6%96%B9%E6%B3%951"><span class="nav-number">1.0.1.5.1.</span> <span class="nav-text">4.3.5.1 方法1</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#4-3-5-2-%E6%96%B9%E6%B3%952"><span class="nav-number">1.0.1.5.2.</span> <span class="nav-text">4.3.5.2 方法2</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-3-6-%E4%BB%8E%E9%99%84%E5%8A%A0%E7%BB%84%E4%B8%AD%E5%88%A0%E9%99%A4%E7%94%A8%E6%88%B7"><span class="nav-number">1.0.1.6.</span> <span class="nav-text">4.3.6 从附加组中删除用户</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E8%AE%BE%E7%BD%AE%E6%96%87%E4%BB%B6%E7%9A%84-Linux-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E6%9D%83%E9%99%90-%E8%A7%A3%E9%87%8A%E4%B8%8D%E5%90%8C%E6%9D%83%E9%99%90%E8%AE%BE%E7%BD%AE%E7%9A%84%E5%AE%89%E5%85%A8%E6%95%88%E6%9E%9C"><span class="nav-number">1.1.</span> <span class="nav-text">5 设置文件的 Linux 文件系统权限 解释不同权限设置的安全效果</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-Linux-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E6%9D%83%E9%99%90"><span class="nav-number">1.1.1.</span> <span class="nav-text">5.1 Linux 文件系统权限</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-1-1-%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E5%92%8C%E7%9B%AE%E5%BD%95%E7%9A%84%E6%9D%83%E9%99%90%E5%8F%8A%E6%89%80%E6%9C%89%E6%9D%83"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">5.1.1 查看文件和目录的权限及所有权</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2-%E7%AE%A1%E7%90%86%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E6%9D%83%E9%99%90"><span class="nav-number">1.1.2.</span> <span class="nav-text">5.2 管理文件系统权限</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-2-1-%E7%AC%A6%E5%8F%B7%E6%B3%95"><span class="nav-number">1.1.2.1.</span> <span class="nav-text">5.2.1 符号法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-2-2-%E6%95%B0%E5%80%BC%E6%B3%95"><span class="nav-number">1.1.2.2.</span> <span class="nav-text">5.2.2 数值法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-3-%E7%AE%A1%E7%90%86%E6%96%87%E4%BB%B6%E6%88%96%E8%80%85%E7%9B%AE%E5%BD%95%E7%9A%84%E5%BD%92%E5%B1%9E"><span class="nav-number">1.1.3.</span> <span class="nav-text">5.3 管理文件或者目录的归属</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-4-ACL-%E8%AE%BF%E9%97%AE%E6%8E%A7%E5%88%B6%E5%88%97%E8%A1%A8-%E9%92%88%E5%AF%B9%E4%B8%AA%E5%88%AB%E7%94%A8%E6%88%B7%E6%88%96%E8%80%85%E7%BB%84%E5%8D%95%E7%8B%AC%E8%AE%BE%E7%BD%AE%E6%9D%83%E9%99%90"><span class="nav-number">1.1.4.</span> <span class="nav-text">5.4 ACL(访问控制列表): 针对个别用户或者组单独设置权限</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-4-1-%E5%8D%95%E7%8B%AC%E7%BB%99%E6%9F%90%E4%B8%AA%E7%94%A8%E6%88%B7%E6%88%96%E7%BB%84%E6%B7%BB%E5%8A%A0%E6%9D%83%E9%99%90"><span class="nav-number">1.1.4.1.</span> <span class="nav-text">5.4.1 单独给某个用户或组添加权限</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-4-2-%E6%9F%A5%E7%9C%8B%E5%8D%95%E7%8B%AC%E8%AE%BE%E7%BD%AE%E7%9A%84%E6%9D%83%E9%99%90"><span class="nav-number">1.1.4.2.</span> <span class="nav-text">5.4.2 查看单独设置的权限</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -1075,6 +670,16 @@
   
 
   
+  <script src="//cdn.jsdelivr.net/npm/quicklink@1/dist/quicklink.umd.js"></script>
+  <script>
+      window.addEventListener('load', () => {
+      quicklink({
+        timeout : 3000,
+        priority: true,
+        ignores : [uri => uri.includes('#'),uri => uri === 'https://rhcsa.teamcs.org/2025-01-20/cm64tzvuo0000zkz80lynhjl8-250120-class-444f0feb2943/',]
+      });
+      });
+  </script>
 
 </body>
 </html>

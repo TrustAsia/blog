@@ -48,7 +48,7 @@
 <meta property="og:image" content="https://rhcsa.teamcs.org/2025-01-16/cm627kvrk0004bsz8f5m51pbs-250116-class-99d49bcf54da/image-20250118145907651.png">
 <meta property="og:image" content="https://rhcsa.teamcs.org/2025-01-16/cm627kvrk0004bsz8f5m51pbs-250116-class-99d49bcf54da/image-20250118150013124.png">
 <meta property="article:published_time" content="2025-01-16T09:22:15.000Z">
-<meta property="article:modified_time" content="2025-01-18T10:05:20.229Z">
+<meta property="article:modified_time" content="2025-01-20T09:14:24.834Z">
 <meta property="article:author" content="Mannix Sun">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://rhcsa.teamcs.org/2025-01-16/cm627kvrk0004bsz8f5m51pbs-250116-class-99d49bcf54da/image-20250116155048869.png">
@@ -202,7 +202,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2025-01-18 18:05:20" itemprop="dateModified" datetime="2025-01-18T18:05:20+08:00">2025-01-18</time>
+                <time title="修改时间：2025-01-20 17:14:24" itemprop="dateModified" datetime="2025-01-20T17:14:24+08:00">2025-01-20</time>
               </span>
 
           
@@ -240,10 +240,10 @@
 <p><img data-src="/2025-01-16/cm627kvrk0004bsz8f5m51pbs-250116-class-99d49bcf54da/image-20250116155459975.png"></p>
 <h2 id="1-4-远程连接"><a href="#1-4-远程连接" class="headerlink" title="1.4 远程连接"></a>1.4 远程连接</h2><p>修改远程配置文件，取消root禁用，便于使用root身份远程。</p>
 <blockquote>
-<p>目标：<br>学习完本节后，学员应能够：利用ssh远程Linux主机，如果root禁用，可以修改ssh配置文件或者使用普通用户登陆即可。</p>
+<p>目标:<br>学习完本节后，学员应能够: 利用ssh远程Linux主机，如果root禁用，可以修改ssh配置文件或者使用普通用户登陆即可。</p>
 </blockquote>
 <h3 id="1-4-1-常规方法"><a href="#1-4-1-常规方法" class="headerlink" title="1.4.1 常规方法"></a>1.4.1 常规方法</h3><h4 id="1-4-1-1-用途"><a href="#1-4-1-1-用途" class="headerlink" title="1.4.1.1 用途"></a>1.4.1.1 用途</h4><p>Linux用户和管理员通常需要通过网络连接到远程系统来获得对远程系统得shell访问权限。</p>
-<h4 id="1-4-1-2-使用原因"><a href="#1-4-1-2-使用原因" class="headerlink" title="1.4.1.2 使用原因"></a>1.4.1.2 使用原因</h4><p>1 许多无外设服务器（没有显示屏得服务器），虚拟机等。<br>2 作为公共或者私有云实例运行（云服务器）。<br>3 方便管理。</p>
+<h4 id="1-4-1-2-使用原因"><a href="#1-4-1-2-使用原因" class="headerlink" title="1.4.1.2 使用原因"></a>1.4.1.2 使用原因</h4><p>1 许多无外设服务器 (没有显示屏得服务器) ，虚拟机等。<br>2 作为公共或者私有云实例运行 (云服务器) 。<br>3 方便管理。</p>
 <h4 id="1-4-1-3-用法"><a href="#1-4-1-3-用法" class="headerlink" title="1.4.1.3 用法"></a>1.4.1.3 用法</h4><p>远程连接之前，要测试网络是否连通。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ping 172.25.250.100</span><br></pre></td></tr></table></figure>
 
@@ -252,7 +252,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh root@172.25.250.100 //连接命令为ssh 用户名@域名或IP</span><br></pre></td></tr></table></figure>
 
 <p><img data-src="/2025-01-16/cm627kvrk0004bsz8f5m51pbs-250116-class-99d49bcf54da/image-20250116155725123.png"></p>
-<h3 id="1-4-2-非常规方法1（考试要求）"><a href="#1-4-2-非常规方法1（考试要求）" class="headerlink" title="1.4.2 非常规方法1（考试要求）"></a>1.4.2 非常规方法1（考试要求）</h3><p>由于默认RHEL9中不允许root用户ssh连接，所以需要更改ssh配置文件。</p>
+<h3 id="1-4-2-非常规方法1-考试要求"><a href="#1-4-2-非常规方法1-考试要求" class="headerlink" title="1.4.2 非常规方法1 (考试要求)"></a>1.4.2 非常规方法1 (考试要求)</h3><p>由于默认RHEL9中不允许root用户ssh连接，所以需要更改ssh配置文件。</p>
 <h4 id="1-4-2-1-修改配置文件"><a href="#1-4-2-1-修改配置文件" class="headerlink" title="1.4.2.1 修改配置文件"></a>1.4.2.1 修改配置文件</h4><p>以视图模式打开虚拟机node1，使用root账户进入系统。</p>
 <blockquote>
 <p>账号: root<br>密码: flectrag</p>
@@ -272,7 +272,7 @@
 <h4 id="1-4-2-3-尝试连接"><a href="#1-4-2-3-尝试连接" class="headerlink" title="1.4.2.3 尝试连接"></a>1.4.2.3 尝试连接</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh root@172.25.250.100</span><br></pre></td></tr></table></figure>
 
 <p><img data-src="/2025-01-16/cm627kvrk0004bsz8f5m51pbs-250116-class-99d49bcf54da/image-20250116155725123.png"></p>
-<h3 id="1-4-3-非常规方法2-考试要求"><a href="#1-4-3-非常规方法2-考试要求" class="headerlink" title="1.4.3 非常规方法2 (考试要求)"></a>1.4.3 非常规方法2 (考试要求)</h3><p>如果无法直接SSH到node的root，先在虚拟机上创建普通用户，同时给这个普通用户设置密码，然后再通过真机远程利用远程用户是普通用户的身份来远程，远程成功后再切换su root真正考试做法注意（因为真正考试9版本SSH默认禁用root登录）。</p>
+<h3 id="1-4-3-非常规方法2-考试要求"><a href="#1-4-3-非常规方法2-考试要求" class="headerlink" title="1.4.3 非常规方法2 (考试要求)"></a>1.4.3 非常规方法2 (考试要求)</h3><p>如果无法直接SSH到node的root，先在虚拟机上创建普通用户，同时给这个普通用户设置密码，然后再通过真机远程利用远程用户是普通用户的身份来远程，远程成功后再切换su root真正考试做法注意 (因为真正考试9版本SSH默认禁用root登录) 。</p>
 <h4 id="1-4-3-1-创建普通用户"><a href="#1-4-3-1-创建普通用户" class="headerlink" title="1.4.3.1 创建普通用户"></a>1.4.3.1 创建普通用户</h4><p>在node1视图模式下，首先创建一个普通用户。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">useradd yang</span><br></pre></td></tr></table></figure>
 
@@ -294,64 +294,64 @@
 
 <p><img data-src="/2025-01-16/cm627kvrk0004bsz8f5m51pbs-250116-class-99d49bcf54da/image-20250116162640036.png"></p>
 <h2 id="2-在-Bash-shell-中复制、移动、创建、删除和组织文件"><a href="#2-在-Bash-shell-中复制、移动、创建、删除和组织文件" class="headerlink" title="2 在 Bash shell 中复制、移动、创建、删除和组织文件"></a>2 在 Bash shell 中复制、移动、创建、删除和组织文件</h2><h3 id="2-1-Linux命令行基础"><a href="#2-1-Linux命令行基础" class="headerlink" title="2.1 Linux命令行基础"></a>2.1 Linux命令行基础</h3><blockquote>
-<p>目标：<br>学习完本节后，学员应能够：理解命令行的基本概念、什么是Bash shell提示符、以及命令行的基本格式，快捷键等。</p>
+<p>目标:<br>学习完本节后，学员应能够: 理解命令行的基本概念、什么是Bash shell提示符、以及命令行的基本格式，快捷键等。</p>
 </blockquote>
 <h4 id="2-1-1-命令行基本概念"><a href="#2-1-1-命令行基本概念" class="headerlink" title="2.1.1 命令行基本概念"></a>2.1.1 命令行基本概念</h4><p>管理员或者用户输入的一串用来完成某些任务的字符，按Enter键提交命令，可用于向计算机系统输入的指令，linux命令行由名为shell程序提供。</p>
-<p>shell提示符：在等待用户输入时会显示一个字符串。</p>
+<p>shell提示符: 在等待用户输入时会显示一个字符串。</p>
 <p>[kiosk@foundation0 ~]$</p>
-<p>[用户名@主机名称 ~（当前所在的位置为家目录）（如果不是~，而是别的字符，那么当前所在位置为对符号的位置）]$(当前这个用户是普通用户)</p>
+<p>[用户名@主机名称 ~ (当前所在的位置为家目录)  (如果不是~，而是别的字符，那么当前所在位置为对符号的位置) ]$(当前这个用户是普通用户)</p>
 <p>[root@node1 ~]#</p>
-<p>[当前的用户名为root@主机名称 ~ （当前所在的位置为家目录）（如果不是~，而是别的字符，那么当前所在位置为对符号的位置）]#（当前的用户为root超级管理员）</p>
+<p>[当前的用户名为root@主机名称 ~  (当前所在的位置为家目录)  (如果不是~，而是别的字符，那么当前所在位置为对符号的位置) ]# (当前的用户为root超级管理员) </p>
 <h4 id="2-1-2-命令行基本格式"><a href="#2-1-2-命令行基本格式" class="headerlink" title="2.1.2 命令行基本格式"></a>2.1.2 命令行基本格式</h4><p>命令+选项+参数。</p>
-<p>命令：命令的名字（ls、mkdir、cp等等）。</p>
-<p>选项：控制命令的执行方式、效果。</p>
-<p>参数的作用：为命令提供操作对象。</p>
-<p>例子：</p>
+<p>命令: 命令的名字 (ls、mkdir、cp等等) 。</p>
+<p>选项: 控制命令的执行方式、效果。</p>
+<p>参数的作用: 为命令提供操作对象。</p>
+<p>例子:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span> -l /home</span><br></pre></td></tr></table></figure>
 
-<h4 id="2-1-3-常用的快捷键"><a href="#2-1-3-常用的快捷键" class="headerlink" title="2.1.3 常用的快捷键"></a>2.1.3 常用的快捷键</h4><p>Tab：自动补全命令名字、文件路径、服务名、软件名（非常重要的功能）。</p>
-<p>Ctrl+L：清屏(相当于clear命令)。</p>
-<p>Ctrl+C：放弃当前任务，中止。</p>
+<h4 id="2-1-3-常用的快捷键"><a href="#2-1-3-常用的快捷键" class="headerlink" title="2.1.3 常用的快捷键"></a>2.1.3 常用的快捷键</h4><p>Tab: 自动补全命令名字、文件路径、服务名、软件名 (非常重要的功能) 。</p>
+<p>Ctrl+L: 清屏(相当于clear命令)。</p>
+<p>Ctrl+C: 放弃当前任务，中止。</p>
 <h3 id="2-2-描述-Linux-文件系统层次结构概念"><a href="#2-2-描述-Linux-文件系统层次结构概念" class="headerlink" title="2.2 描述 Linux 文件系统层次结构概念"></a>2.2 描述 Linux 文件系统层次结构概念</h3><blockquote>
-<p>目标：<br>学习完本节后，学员应能够：描述 Linux 如何组织文件，以及文件系统中各目录的用途。</p>
+<p>目标:<br>学习完本节后，学员应能够: 描述 Linux 如何组织文件，以及文件系统中各目录的用途。</p>
 </blockquote>
-<h4 id="2-2-1-文件系统层次结构"><a href="#2-2-1-文件系统层次结构" class="headerlink" title="2.2.1 文件系统层次结构"></a>2.2.1 文件系统层次结构</h4><p>Linux 系统中的所有文件存储在文件系统中，它们被组织到一个颠倒的目录树中，称为文件系统层次结构（file-system hierarchy）。</p>
+<h4 id="2-2-1-文件系统层次结构"><a href="#2-2-1-文件系统层次结构" class="headerlink" title="2.2.1 文件系统层次结构"></a>2.2.1 文件系统层次结构</h4><p>Linux 系统中的所有文件存储在文件系统中，它们被组织到一个颠倒的目录树中，称为文件系统层次结构 (file-system hierarchy) 。</p>
 <p><img data-src="/2025-01-16/cm627kvrk0004bsz8f5m51pbs-250116-class-99d49bcf54da/3947.png"></p>
 <p>&#x2F; 目录是根目录，位于文件系统层次结构的顶部<br>&#x2F; 字符还用做目录分隔符</p>
-<h4 id="2-2-2-RHEL-重要目录"><a href="#2-2-2-RHEL-重要目录" class="headerlink" title="2.2.2 RHEL 重要目录"></a>2.2.2 RHEL 重要目录</h4><p>&#x2F;usr：安装的软件、共享的库。重要的子目录包括。</p>
+<h4 id="2-2-2-RHEL-重要目录"><a href="#2-2-2-RHEL-重要目录" class="headerlink" title="2.2.2 RHEL 重要目录"></a>2.2.2 RHEL 重要目录</h4><p>&#x2F;usr: 安装的软件、共享的库。重要的子目录包括。</p>
 <blockquote>
-<p>&#x2F;usr&#x2F;bin：用户命令。<br>&#x2F;usr&#x2F;sbin：系统管理命令。<br>&#x2F;usr&#x2F;local：本地自定义软件。</p>
+<p>&#x2F;usr&#x2F;bin: 用户命令。<br>&#x2F;usr&#x2F;sbin: 系统管理命令。<br>&#x2F;usr&#x2F;local: 本地自定义软件。</p>
 </blockquote>
-<p>&#x3D;&#x3D;&#x2F;etc&#x3D;&#x3D;：配置文件。</p>
-<p>&#x2F;var：可变数据，重启后也永久保存。包含动态变化的文件（如数据库、缓存目录、日志文件）。</p>
-<p>&#x2F;run：自系统启动以来启动的进程的运行时数据。这包括进程 ID文件和锁定文件等。此目录中的内容在重启时重新创建。*此目录合并了早期版本的 RHEL 中的 &#x2F;var&#x2F;run 和 &#x2F;var&#x2F;lock。</p>
-<p>&#x3D;&#x3D;&#x2F;home&#x3D;&#x3D;：普通用户存储其个人数据和配置文件的家目录。</p>
-<p>&#x3D;&#x3D;&#x2F;root&#x3D;&#x3D;：超级用户 root 的家目录。</p>
-<p>&#x2F;tmp：供临时文件使用的全局可写空间。10 天内未访问、未更改或未修改的文件将自动从该目录中删除。另一个临时目录&#x2F;var&#x2F;tmp，该目录中的文件如果在 30 天内未曾访问、更改或修改过，将被自动删除。</p>
-<p>&#x2F;boot：系统启动过程所需的文件。</p>
-<p>&#x2F;dev：包含特殊的设备文件，供系统访问硬件。</p>
+<p>&#x2F;etc: 配置文件。</p>
+<p>&#x2F;var: 可变数据，重启后也永久保存。包含动态变化的文件 (如数据库、缓存目录、日志文件) 。</p>
+<p>&#x2F;run: 自系统启动以来启动的进程的运行时数据。这包括进程 ID文件和锁定文件等。此目录中的内容在重启时重新创建。*此目录合并了早期版本的 RHEL 中的 &#x2F;var&#x2F;run 和 &#x2F;var&#x2F;lock。</p>
+<p>&#x2F;home: 普通用户存储其个人数据和配置文件的家目录。</p>
+<p>&#x2F;root: 超级用户 root 的家目录。</p>
+<p>&#x2F;tmp: 供临时文件使用的全局可写空间。10 天内未访问、未更改或未修改的文件将自动从该目录中删除。另一个临时目录&#x2F;var&#x2F;tmp，该目录中的文件如果在 30 天内未曾访问、更改或修改过，将被自动删除。</p>
+<p>&#x2F;boot: 系统启动过程所需的文件。</p>
+<p>&#x2F;dev: 包含特殊的设备文件，供系统访问硬件。</p>
 <h3 id="2-3-通过名称指定文件"><a href="#2-3-通过名称指定文件" class="headerlink" title="2.3 通过名称指定文件"></a>2.3 通过名称指定文件</h3><blockquote>
-<p>目标：<br>学习完本节后，学员应能够：识别文件的相对路径和绝对路径，确定并更改工作目录，以及列出目录的内容。</p>
+<p>目标:<br>学习完本节后，学员应能够: 识别文件的相对路径和绝对路径，确定并更改工作目录，以及列出目录的内容。</p>
 </blockquote>
 <h4 id="2-3-1-绝对路径和相对路径"><a href="#2-3-1-绝对路径和相对路径" class="headerlink" title="2.3.1 绝对路径和相对路径"></a>2.3.1 绝对路径和相对路径</h4><p>文件或目录的路径是其在文件系统中的位置。</p>
-<p>文件路径会遍历一个或多个子目录，用斜杠（&#x2F;）分隔，直至目标位置。</p>
+<p>文件路径会遍历一个或多个子目录，用斜杠 (&#x2F;) 分隔，直至目标位置。</p>
 <p>目录也称为文件夹，包含其他文件和子目录。</p>
-<p>&#x3D;&#x3D;绝对路径&#x3D;&#x3D;：文件在文件系统中的确切位置。它从根目录（&#x2F;）开始，遍历的每个子目录。例如：&#x2F;var&#x2F;log&#x2F;messages。</p>
-<p>&#x3D;&#x3D;相对路径&#x3D;&#x3D;：从当前工作目录到达该文件所需的路径，路径不以 &#x2F; 开头。</p>
-<p>Linux 中的文件系统，&#x3D;&#x3D;严格区分大小写&#x3D;&#x3D;。FileCase.txt 和filecase.txt 是两个不同文件。</p>
+<p>绝对路径: 文件在文件系统中的确切位置。它从根目录 (&#x2F;) 开始，遍历的每个子目录。例如: &#x2F;var&#x2F;log&#x2F;messages。</p>
+<p>相对路径: 从当前工作目录到达该文件所需的路径，路径不以 &#x2F; 开头。</p>
+<p>Linux 中的文件系统，严格区分大小写。FileCase.txt 和filecase.txt 是两个不同文件。</p>
 <h4 id="2-3-2-浏览文件系统中的路径"><a href="#2-3-2-浏览文件系统中的路径" class="headerlink" title="2.3.2 浏览文件系统中的路径"></a>2.3.2 浏览文件系统中的路径</h4><p>pwd 命令显示当前工作目录的绝对路径。</p>
 <p>ls 命令列出指定目录的目录内容；如果未指定目录，则列出当前工作目录的内容。</p>
-<p>-l 用来列出详细信息（大小、权限、修改的时间等等）</p>
+<p>-l 用来列出详细信息 (大小、权限、修改的时间等等) </p>
 <blockquote>
 <p>普通文件<br>d目录文件<br>l符号链接</p>
 </blockquote>
 <p>-h 显示更加易懂的容量单位</p>
-<p>-d 只看目录或者文件本身的信息（即使参数是一个目录，下面还有内容也不会显示）</p>
+<p>-d 只看目录或者文件本身的信息 (即使参数是一个目录，下面还有内容也不会显示) </p>
 <p>-a 列出隐藏的文件</p>
-<p>注：开头为句点（.）的文件名表示隐藏文件。</p>
+<p>注: 开头为句点 (.) 的文件名表示隐藏文件。</p>
 <p>cd 命令可更改工作目录。如果没有指定任何参数，它将切换到家目录</p>
 <p><img data-src="/2025-01-16/cm627kvrk0004bsz8f5m51pbs-250116-class-99d49bcf54da/image-20250118145757836.png"></p>
-<p>cd .. 进入父目录 即当前目录的上一个目录 （. 表示当前目录，用以省略当前目录的绝对路径）</p>
+<p>cd .. 进入父目录 即当前目录的上一个目录  (. 表示当前目录，用以省略当前目录的绝对路径) </p>
 <p><img data-src="/2025-01-16/cm627kvrk0004bsz8f5m51pbs-250116-class-99d49bcf54da/image-20250118145907651.png"></p>
 <p>touch 命令可用于创建空文件</p>
 <p><img data-src="/2025-01-16/cm627kvrk0004bsz8f5m51pbs-250116-class-99d49bcf54da/image-20250118150013124.png"></p>
@@ -455,7 +455,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-%E9%AA%8C%E8%AF%81%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">1.3 验证网络配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-1-%E6%9F%A5%E7%9C%8B%E7%BD%91%E7%BB%9C%E6%8E%A5%E5%8F%A3%E4%BF%A1%E6%81%AF"><span class="nav-number">1.1.</span> <span class="nav-text">1.3.1 查看网络接口信息</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3-1-1-%E5%88%97%E5%87%BA%E7%B3%BB%E7%BB%9F%E4%B8%8A%E6%89%80%E6%9C%89%E5%8F%AF%E7%94%A8%E7%BD%91%E7%BB%9C%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%90%8D%E7%A7%B0%E5%92%8CMAC%E5%9C%B0%E5%9D%80"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.3.1.1 列出系统上所有可用网络接口的名称和MAC地址</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3-1-2-%E6%98%BE%E7%A4%BA-IP-%E5%9C%B0%E5%9D%80"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.3.1.2 显示 IP 地址</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3-1-3-%E6%98%BE%E7%A4%BA%E6%80%A7%E8%83%BD%E7%BB%9F%E8%AE%A1%E4%BF%A1%E6%81%AF"><span class="nav-number">1.1.3.</span> <span class="nav-text">1.3.1.3 显示性能统计信息</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-2-%E9%AA%8C%E8%AF%81%E4%B8%BB%E6%9C%BA%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BF%9E%E6%8E%A5"><span class="nav-number">1.2.</span> <span class="nav-text">1.3.2 验证主机之间的连接</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4-%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5"><span class="nav-number">2.</span> <span class="nav-text">1.4 远程连接</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-1-%E5%B8%B8%E8%A7%84%E6%96%B9%E6%B3%95"><span class="nav-number">2.1.</span> <span class="nav-text">1.4.1 常规方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-1-1-%E7%94%A8%E9%80%94"><span class="nav-number">2.1.1.</span> <span class="nav-text">1.4.1.1 用途</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-1-2-%E4%BD%BF%E7%94%A8%E5%8E%9F%E5%9B%A0"><span class="nav-number">2.1.2.</span> <span class="nav-text">1.4.1.2 使用原因</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-1-3-%E7%94%A8%E6%B3%95"><span class="nav-number">2.1.3.</span> <span class="nav-text">1.4.1.3 用法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-2-%E9%9D%9E%E5%B8%B8%E8%A7%84%E6%96%B9%E6%B3%951%EF%BC%88%E8%80%83%E8%AF%95%E8%A6%81%E6%B1%82%EF%BC%89"><span class="nav-number">2.2.</span> <span class="nav-text">1.4.2 非常规方法1（考试要求）</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-2-1-%E4%BF%AE%E6%94%B9%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">2.2.1.</span> <span class="nav-text">1.4.2.1 修改配置文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-2-2-%E9%87%8D%E5%90%AFsshd%E6%9C%8D%E5%8A%A1"><span class="nav-number">2.2.2.</span> <span class="nav-text">1.4.2.2 重启sshd服务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-2-3-%E5%B0%9D%E8%AF%95%E8%BF%9E%E6%8E%A5"><span class="nav-number">2.2.3.</span> <span class="nav-text">1.4.2.3 尝试连接</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-3-%E9%9D%9E%E5%B8%B8%E8%A7%84%E6%96%B9%E6%B3%952-%E8%80%83%E8%AF%95%E8%A6%81%E6%B1%82"><span class="nav-number">2.3.</span> <span class="nav-text">1.4.3 非常规方法2 (考试要求)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-3-1-%E5%88%9B%E5%BB%BA%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7"><span class="nav-number">2.3.1.</span> <span class="nav-text">1.4.3.1 创建普通用户</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-3-2-%E4%B8%BA%E6%96%B0%E7%94%A8%E6%88%B7%E8%AE%BE%E7%BD%AE%E5%AF%86%E7%A0%81"><span class="nav-number">2.3.2.</span> <span class="nav-text">1.4.3.2 为新用户设置密码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-3-3-%E8%BF%9E%E6%8E%A5"><span class="nav-number">2.3.3.</span> <span class="nav-text">1.4.3.3 连接</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%9C%A8-Bash-shell-%E4%B8%AD%E5%A4%8D%E5%88%B6%E3%80%81%E7%A7%BB%E5%8A%A8%E3%80%81%E5%88%9B%E5%BB%BA%E3%80%81%E5%88%A0%E9%99%A4%E5%92%8C%E7%BB%84%E7%BB%87%E6%96%87%E4%BB%B6"><span class="nav-number">3.</span> <span class="nav-text">2 在 Bash shell 中复制、移动、创建、删除和组织文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%9F%BA%E7%A1%80"><span class="nav-number">3.1.</span> <span class="nav-text">2.1 Linux命令行基础</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-1-%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">3.1.1.</span> <span class="nav-text">2.1.1 命令行基本概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-2-%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%9F%BA%E6%9C%AC%E6%A0%BC%E5%BC%8F"><span class="nav-number">3.1.2.</span> <span class="nav-text">2.1.2 命令行基本格式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-3-%E5%B8%B8%E7%94%A8%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-number">3.1.3.</span> <span class="nav-text">2.1.3 常用的快捷键</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-%E6%8F%8F%E8%BF%B0-Linux-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84%E6%A6%82%E5%BF%B5"><span class="nav-number">3.2.</span> <span class="nav-text">2.2 描述 Linux 文件系统层次结构概念</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-1-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84"><span class="nav-number">3.2.1.</span> <span class="nav-text">2.2.1 文件系统层次结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-2-RHEL-%E9%87%8D%E8%A6%81%E7%9B%AE%E5%BD%95"><span class="nav-number">3.2.2.</span> <span class="nav-text">2.2.2 RHEL 重要目录</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-%E9%80%9A%E8%BF%87%E5%90%8D%E7%A7%B0%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6"><span class="nav-number">3.3.</span> <span class="nav-text">2.3 通过名称指定文件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-1-%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84%E5%92%8C%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84"><span class="nav-number">3.3.1.</span> <span class="nav-text">2.3.1 绝对路径和相对路径</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-2-%E6%B5%8F%E8%A7%88%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E4%B8%AD%E7%9A%84%E8%B7%AF%E5%BE%84"><span class="nav-number">3.3.2.</span> <span class="nav-text">2.3.2 浏览文件系统中的路径</span></a></li></ol></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-3-%E9%AA%8C%E8%AF%81%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE"><span class="nav-number">1.</span> <span class="nav-text">1.3 验证网络配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-1-%E6%9F%A5%E7%9C%8B%E7%BD%91%E7%BB%9C%E6%8E%A5%E5%8F%A3%E4%BF%A1%E6%81%AF"><span class="nav-number">1.1.</span> <span class="nav-text">1.3.1 查看网络接口信息</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3-1-1-%E5%88%97%E5%87%BA%E7%B3%BB%E7%BB%9F%E4%B8%8A%E6%89%80%E6%9C%89%E5%8F%AF%E7%94%A8%E7%BD%91%E7%BB%9C%E6%8E%A5%E5%8F%A3%E7%9A%84%E5%90%8D%E7%A7%B0%E5%92%8CMAC%E5%9C%B0%E5%9D%80"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.3.1.1 列出系统上所有可用网络接口的名称和MAC地址</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3-1-2-%E6%98%BE%E7%A4%BA-IP-%E5%9C%B0%E5%9D%80"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.3.1.2 显示 IP 地址</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3-1-3-%E6%98%BE%E7%A4%BA%E6%80%A7%E8%83%BD%E7%BB%9F%E8%AE%A1%E4%BF%A1%E6%81%AF"><span class="nav-number">1.1.3.</span> <span class="nav-text">1.3.1.3 显示性能统计信息</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-3-2-%E9%AA%8C%E8%AF%81%E4%B8%BB%E6%9C%BA%E4%B9%8B%E9%97%B4%E7%9A%84%E8%BF%9E%E6%8E%A5"><span class="nav-number">1.2.</span> <span class="nav-text">1.3.2 验证主机之间的连接</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-4-%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5"><span class="nav-number">2.</span> <span class="nav-text">1.4 远程连接</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-1-%E5%B8%B8%E8%A7%84%E6%96%B9%E6%B3%95"><span class="nav-number">2.1.</span> <span class="nav-text">1.4.1 常规方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-1-1-%E7%94%A8%E9%80%94"><span class="nav-number">2.1.1.</span> <span class="nav-text">1.4.1.1 用途</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-1-2-%E4%BD%BF%E7%94%A8%E5%8E%9F%E5%9B%A0"><span class="nav-number">2.1.2.</span> <span class="nav-text">1.4.1.2 使用原因</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-1-3-%E7%94%A8%E6%B3%95"><span class="nav-number">2.1.3.</span> <span class="nav-text">1.4.1.3 用法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-2-%E9%9D%9E%E5%B8%B8%E8%A7%84%E6%96%B9%E6%B3%951-%E8%80%83%E8%AF%95%E8%A6%81%E6%B1%82"><span class="nav-number">2.2.</span> <span class="nav-text">1.4.2 非常规方法1 (考试要求)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-2-1-%E4%BF%AE%E6%94%B9%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">2.2.1.</span> <span class="nav-text">1.4.2.1 修改配置文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-2-2-%E9%87%8D%E5%90%AFsshd%E6%9C%8D%E5%8A%A1"><span class="nav-number">2.2.2.</span> <span class="nav-text">1.4.2.2 重启sshd服务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-2-3-%E5%B0%9D%E8%AF%95%E8%BF%9E%E6%8E%A5"><span class="nav-number">2.2.3.</span> <span class="nav-text">1.4.2.3 尝试连接</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-4-3-%E9%9D%9E%E5%B8%B8%E8%A7%84%E6%96%B9%E6%B3%952-%E8%80%83%E8%AF%95%E8%A6%81%E6%B1%82"><span class="nav-number">2.3.</span> <span class="nav-text">1.4.3 非常规方法2 (考试要求)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-3-1-%E5%88%9B%E5%BB%BA%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7"><span class="nav-number">2.3.1.</span> <span class="nav-text">1.4.3.1 创建普通用户</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-3-2-%E4%B8%BA%E6%96%B0%E7%94%A8%E6%88%B7%E8%AE%BE%E7%BD%AE%E5%AF%86%E7%A0%81"><span class="nav-number">2.3.2.</span> <span class="nav-text">1.4.3.2 为新用户设置密码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-4-3-3-%E8%BF%9E%E6%8E%A5"><span class="nav-number">2.3.3.</span> <span class="nav-text">1.4.3.3 连接</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E5%9C%A8-Bash-shell-%E4%B8%AD%E5%A4%8D%E5%88%B6%E3%80%81%E7%A7%BB%E5%8A%A8%E3%80%81%E5%88%9B%E5%BB%BA%E3%80%81%E5%88%A0%E9%99%A4%E5%92%8C%E7%BB%84%E7%BB%87%E6%96%87%E4%BB%B6"><span class="nav-number">3.</span> <span class="nav-text">2 在 Bash shell 中复制、移动、创建、删除和组织文件</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-Linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%9F%BA%E7%A1%80"><span class="nav-number">3.1.</span> <span class="nav-text">2.1 Linux命令行基础</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-1-%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="nav-number">3.1.1.</span> <span class="nav-text">2.1.1 命令行基本概念</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-2-%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%9F%BA%E6%9C%AC%E6%A0%BC%E5%BC%8F"><span class="nav-number">3.1.2.</span> <span class="nav-text">2.1.2 命令行基本格式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1-3-%E5%B8%B8%E7%94%A8%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-number">3.1.3.</span> <span class="nav-text">2.1.3 常用的快捷键</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-%E6%8F%8F%E8%BF%B0-Linux-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84%E6%A6%82%E5%BF%B5"><span class="nav-number">3.2.</span> <span class="nav-text">2.2 描述 Linux 文件系统层次结构概念</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-1-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84"><span class="nav-number">3.2.1.</span> <span class="nav-text">2.2.1 文件系统层次结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2-2-RHEL-%E9%87%8D%E8%A6%81%E7%9B%AE%E5%BD%95"><span class="nav-number">3.2.2.</span> <span class="nav-text">2.2.2 RHEL 重要目录</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-%E9%80%9A%E8%BF%87%E5%90%8D%E7%A7%B0%E6%8C%87%E5%AE%9A%E6%96%87%E4%BB%B6"><span class="nav-number">3.3.</span> <span class="nav-text">2.3 通过名称指定文件</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-1-%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84%E5%92%8C%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84"><span class="nav-number">3.3.1.</span> <span class="nav-text">2.3.1 绝对路径和相对路径</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3-2-%E6%B5%8F%E8%A7%88%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E4%B8%AD%E7%9A%84%E8%B7%AF%E5%BE%84"><span class="nav-number">3.3.2.</span> <span class="nav-text">2.3.2 浏览文件系统中的路径</span></a></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -471,7 +471,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
